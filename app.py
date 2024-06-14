@@ -37,7 +37,7 @@ def initialize_chunks_embeddings():
 initialize_chunks_embeddings()
 
 #  ****API_KEY****  #
-api_key = "AIzaSyAuoggTUpQqaXsnGgp8Rd-U6NbXAyM3AIk"
+api_key = "YOUR_GEN_AI_API_KEY"
 # Configure GenerativeAI
 genai.configure(api_key=api_key)
 genmodel = genai.GenerativeModel('gemini-pro')
@@ -81,5 +81,9 @@ def getJobDetails():
 
         return response
 
+@app.route('/', methods=['GET'])
+def hello():
+    return "Hello, World!"
+
 if __name__ == '__main__':
-    app.run(app.run(host='0.0.0.0', port=5000))
+    app.run(host='0.0.0.0', port=5000)
