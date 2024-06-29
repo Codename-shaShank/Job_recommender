@@ -24,8 +24,6 @@ Make sure to run the resume_model.ipynb notebook completely to generate the nece
    ```bash
    python app.py
 
-
-
 ## Files
 
 • `app.py`: The main Streamlit application file.
